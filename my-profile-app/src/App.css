@@ -1,0 +1,51 @@
+:root {
+	--white: #fffffe;      /*var(--lightGreen)*/
+	--yellow: #f9bc60;     /*var(--yellow)*/
+	--lightGreen: #abd1c6; /*var(--lightGreen)*/
+	--green: #004643;      /*var(--green)*/
+	--darkGreen: #001e1d;  /*var(--darkGreen)*/
+}
+
+#portfolioContainer {
+	width:100vw;
+    height:100vh;
+}
+
+.nightMode{
+	background-color: var(--green);
+}
+
+.sun {
+	margin: 0.5rem;
+	border-radius: 2rem;
+	padding: 0.2rem;
+	height: 2rem;
+	width: 2rem;
+	color: var(--yellow);
+	transition: 0.5s;
+	background-color:
+}
+
+.sun:hover {
+	background-color: var(--yellow);
+	color: var(--darkGreen);
+}
+
+.dayMode {
+	background-color: var(--lightGreen);
+}
+
+.moon {
+	margin: 0.5rem;
+	border-radius: 2rem;
+	padding: 0.2rem;
+	height: 2rem;
+	width: 2rem;
+	transition: 0.5s;
+	color: var(--darkGreen)
+}
+
+.moon:hover {
+	background-color: var(--darkGreen);
+	color: var(--yellow);
+}
