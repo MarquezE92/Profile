@@ -11,6 +11,7 @@
     height:100vh;
 }
 
+/*---------------------------------------------- CSS MODO NOCHE 	*/
 .nightMode{
 	background-color: var(--green);
 }
@@ -25,7 +26,7 @@
 	width: 2rem;
 	color: var(--yellow);
 	transition: 0.5s;
-	background-color:
+	cursor: pointer;
 }
 
 .sun:hover {
@@ -33,7 +34,7 @@
 	color: var(--darkGreen);
 }
 
-/*---------------------------------------------- BOTONES NOCHE 	*/
+/*---------------------------------------------- BOTONES NAV 	*/
 
 .btnNightMode {
 	width: 9rem;
@@ -74,7 +75,8 @@
 	background: rgba(249, 188, 96, 0.6);
 }
 
-/*---------------------------------------------- CSS MODO DIA 	*/
+
+/*---------------------------------------------- CSS MODO DIA 	 	*/
 
 .dayMode {
 	background-color: var(--lightGreen);
@@ -96,7 +98,7 @@
 	color: var(--yellow);
 }
 
-/*---------------------------------------------- BOTONES DIA 	*/
+/*---------------------------------------------- BOTONES NAV	*/
 .btnDayMode {
 	width: 9rem;
  	height: 2.4rem;
@@ -134,4 +136,25 @@
 
 .btnDayMode:active:before {
 	background: rgba(0, 30, 29, 0.6);
+}
+
+/*---------------------------------------------- BOTONES LANGUAGE		*/
+
+#usa {
+	cursor: pointer;
+	border: solid 0.1rem var(--yellow);
+	border-radius: 2rem;
+	height: 2rem;
+	width: 2rem;
+	background: linear-gradient(0deg, rgba(186,10,10,1) 0%, rgba(186,10,10,1) 5%, rgba(255,255,255,1) 6%, rgba(255,255,255,1) 19%, rgba(186,10,10,1) 20%, rgba(186,10,10,1) 39%, rgba(255,255,255,1) 40%, rgba(255,255,255,1) 59%, rgba(186,10,10,1) 60%, rgba(186,10,10,1) 79%, rgba(255,255,255,1) 80%, rgba(255,255,255,1) 95%, rgba(186,10,10,1) 96%, rgba(186,10,10,1) 100%); 
+
+}
+
+#esp {
+	cursor: pointer;
+	border: solid 0.1rem var(--yellow);
+	border-radius: 2rem;
+	height: 2rem;
+	width: 2rem;
+	background: linear-gradient(0deg, rgba(186,10,10,1) 0%, rgba(186,10,10,1) 26%, rgba(236,220,32,1) 27%, rgba(236,220,32,1) 74%,  rgba(186,10,10,1) 75%, rgba(186,10,10,1) 100%);
 }
