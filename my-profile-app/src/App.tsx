@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { BsSun, BsFillMoonFill } from "react-icons/bs";
-import './App.css';
+import NavBtnsEn from "./Components/NavBtnsEn.tsx";
+import NavBtnsEs from "./Components/NavBtnsEs.tsx";
+import "./App.css";
 
 const App = ()=> {
 
@@ -17,10 +19,7 @@ const App = ()=> {
 
   return (
     <div id="portfolioContainer" className={(nightMode)? "nightMode" : "dayMode"}>
-      <button className={(nightMode)? "btnNightMode" : "btnDayMode"}>About me</button>
-      <button className={(nightMode)? "btnNightMode" : "btnDayMode"}>Skills</button>
-      <button className={(nightMode)? "btnNightMode" : "btnDayMode"}>Proyects</button>
-      <button className={(nightMode)? "btnNightMode" : "btnDayMode"}>Contact me</button>
+      {(en)? (<NavBtnsEn nightMode={nightMode}/>): (<NavBtnsEs nightMode={nightMode}/>)}
       {(en)? (<button onClick={handleLanguage}>ES</button>): (<button onClick={handleLanguage}>EN</button>)}
       {(nightMode)? (<BsSun className="sun" onClick={handleNightMode}/>): (<BsFillMoonFill className="moon" onClick={handleNightMode}/>)}
     </div>
