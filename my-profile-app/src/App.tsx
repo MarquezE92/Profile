@@ -17,6 +17,10 @@ const App = ()=> {
 
   return (
     <div id="portfolioContainer" className={(nightMode)? "nightMode" : "dayMode"}>
+      <button className={(nightMode)? "btnNightMode" : "btnDayMode"}>About me</button>
+      <button className={(nightMode)? "btnNightMode" : "btnDayMode"}>Skills</button>
+      <button className={(nightMode)? "btnNightMode" : "btnDayMode"}>Proyects</button>
+      <button className={(nightMode)? "btnNightMode" : "btnDayMode"}>Contact me</button>
       {(en)? (<button onClick={handleLanguage}>ES</button>): (<button onClick={handleLanguage}>EN</button>)}
       {(nightMode)? (<BsSun className="sun" onClick={handleNightMode}/>): (<BsFillMoonFill className="moon" onClick={handleNightMode}/>)}
     </div>
