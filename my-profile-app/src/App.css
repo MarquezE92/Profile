@@ -12,6 +12,25 @@
     height:100vh;
 }
 
+#navBtnsContainer {
+	width: 100%;
+	padding-top: 1rem;
+	display: flex;
+	justify-content: center;
+}
+
+.languageBtn {
+	position: fixed;
+	top: 1rem;
+	left: 1rem;
+}
+
+.modeBtn {
+	position: fixed;
+	top: 0.5rem;
+	right: 0.5rem;
+}
+
 /*---------------------------------------------- CSS MODO NOCHE 	*/
 .nightMode{
 	background-color: var(--green);
@@ -19,18 +38,19 @@
 
 /*---------------------------------------------- ICONO SOL 	*/
 
-.sun {
+#sun {
 	margin: 0.5rem;
 	border-radius: 2rem;
 	padding: 0.2rem;
 	height: 2rem;
 	width: 2rem;
+	background-color: var(--green);
 	color: var(--yellow);
 	transition: 0.5s;
 	cursor: pointer;
 }
 
-.sun:hover {
+#sun:hover {
 	background-color: var(--yellow);
 	color: var(--darkGreen);
 }
@@ -38,15 +58,16 @@
 /*---------------------------------------------- BOTONES NAV 	*/
 
 .btnNightMode {
+	height: 2.4rem;
 	width: 9rem;
- 	height: 2.4rem;
+ 	margin: 0 0.3rem;
  	font-size: 1.5rem;
  	cursor: pointer;
  	border: none;
  	outline: none;
  	background: transparent;
  	color: var(--yellow);
- 	font-weight: 700;
+ 	font-weight: 600;
  	position: relative;
  	transition: all 0.5s;
  	z-index: 1;
@@ -110,17 +131,18 @@
 }
 
 /*---------------------------------------------- ICONO LUNA 	*/
-.moon {
+#moon {
 	margin: 0.5rem;
 	border-radius: 2rem;
 	padding: 0.2rem;
 	height: 2rem;
 	width: 2rem;
 	transition: 0.5s;
+	background-color: var(--lightGreen);
 	color: var(--darkGreen)
 }
 
-.moon:hover {
+#moon:hover {
 	background-color: var(--darkGreen);
 	color: var(--yellow);
 }
@@ -169,7 +191,7 @@
 
 #usa {
 	cursor: pointer;
-	border: solid 0.1rem var(--yellow);
+	border: none;
 	border-radius: 2rem;
 	height: 2rem;
 	width: 2rem;
@@ -179,7 +201,7 @@
 
 #esp {
 	cursor: pointer;
-	border: solid 0.1rem var(--yellow);
+	border: none;
 	border-radius: 2rem;
 	height: 2rem;
 	width: 2rem;
