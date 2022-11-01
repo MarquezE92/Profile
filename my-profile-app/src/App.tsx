@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { BsSun, BsFillMoonFill } from "react-icons/bs";
 import NavBtnsEn from "./Components/NavBtnsEn.tsx";
 import NavBtnsEs from "./Components/NavBtnsEs.tsx";
+import SocialBanner from "./Components/SocialBanner.tsx";
 import "./App.css";
 
 const App = ()=> {
@@ -19,6 +20,7 @@ const App = ()=> {
 
   return (
     <div id="portfolioContainer" className={(nightMode)? "nightMode" : "dayMode"}>
+      <SocialBanner nightMode={nightMode}/>
       {(en)? (<NavBtnsEn nightMode={nightMode}/>): (<NavBtnsEs nightMode={nightMode}/>)}
       {(en)? (<button id="esp" onClick={handleLanguage}></button>): (<button id="usa" onClick={handleLanguage}></button>)}
       {(nightMode)? (<BsSun className="sun" onClick={handleNightMode}/>): (<BsFillMoonFill className="moon" onClick={handleNightMode}/>)}

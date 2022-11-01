@@ -6,6 +6,7 @@
 	--darkGreen: #001e1d;  /*var(--darkGreen)*/
 }
 
+
 #portfolioContainer {
 	width:100vw;
     height:100vh;
@@ -75,6 +76,32 @@
 	background: rgba(249, 188, 96, 0.6);
 }
 
+/*---------------------------------------------- BANNER CONTACTO REDES	 	*/
+
+.bannerNightMode {
+	height: 10rem;
+	width: 3rem;
+	background-color: var(--lightGreen);
+	border-radius: 0 1rem 1rem 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+	top: 8rem;
+}
+
+.bannerNightMode .bannerIcon {
+	height: 1.7rem;
+	width: 1.7rem;
+	transition: 0.5s;
+	cursor: pointer;
+	color: var(--green);
+}
+
+.bannerNightMode .bannerIcon:hover {
+	color: var(--darkGreen);
+}
 
 /*---------------------------------------------- CSS MODO DIA 	 	*/
 
@@ -138,7 +165,7 @@
 	background: rgba(0, 30, 29, 0.6);
 }
 
-/*---------------------------------------------- BOTONES LANGUAGE		*/
+/*---------------------------------------------- BOTONES LENGUAJE		*/
 
 #usa {
 	cursor: pointer;
@@ -157,4 +184,31 @@
 	height: 2rem;
 	width: 2rem;
 	background: linear-gradient(0deg, rgba(186,10,10,1) 0%, rgba(186,10,10,1) 26%, rgba(236,220,32,1) 27%, rgba(236,220,32,1) 74%,  rgba(186,10,10,1) 75%, rgba(186,10,10,1) 100%);
+}
+
+/*---------------------------------------------- BANNER CONTACTO REDES	 	*/
+
+.bannerDayMode {
+	height: 10rem;
+	width: 3rem;
+	background-color: var(--green);
+	border-radius: 0 1rem 1rem 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+	top: 8rem;
+}
+
+.bannerDayMode .bannerIcon {
+	height: 1.7rem;
+	width: 1.7rem;
+	transition: 0.5s;
+	cursor: pointer;
+	color: var(--lightGreen);
+}
+
+.bannerDayMode .bannerIcon:hover {
+	color: var(--yellow);
 }

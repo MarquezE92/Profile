@@ -1,6 +1,6 @@
 import React from "react";
 
-const NavBtnsEn = ({nightMode})=> {
+const NavBtnsEn = ({nightMode, en})=> {
 
 	return (
 		<div>
