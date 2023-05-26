@@ -1,9 +1,12 @@
 
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, FC } from 'react';
 import emailjs from '@emailjs/browser';
 
+interface ContactFormProps {
+  en: boolean
+}
 
-export const ContactFormEn = () => {
+export const ContactForm: FC <ContactFormProps> = ({en}) => {
   const form = useRef();
 
   const [input, setInput] = useState({"name": "", "email": "", "message":""});
@@ -22,15 +25,15 @@ export const ContactFormEn = () => {
 
   return (
     <form ref={form} onSubmit={sendEmail} className="contactContainer">
-      <label>Name</label>
+      <label>{en ? "Name" : "Nombre"}</label>
       <input type="text" name="user_name" />
       <label>Email</label>
       <input type="email" name="user_email" />
-      <label>Message</label>
+      <label>{en ? "Message" : "Mensaje"}</label>
       <textarea name="message" />
       <input type="submit" value="Send" />
     </form>
   );
 };
 
-export default ContactFormEn;
+export default ContactForm;

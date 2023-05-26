@@ -1,7 +1,11 @@
-import React from "react";
+import React, { FC } from "react";
 import { BsLinkedin, BsGithub, BsWhatsapp } from "react-icons/bs";
 
-const SocialBanner = ({nightMode})=> {
+interface SocialBannerProps {
+  nightMode: boolean
+}
+
+const SocialBanner: FC<SocialBannerProps> = ({nightMode})=> {
 	
 	return (
 		<div className={(nightMode)? "bannerNightMode" : "bannerDayMode"}>
