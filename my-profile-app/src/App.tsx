@@ -37,13 +37,13 @@ const App = ()=> {
   return (
     <div id="portfolioContainer" className={(nightMode)? "nightMode" : "dayMode"}>
       <SocialBanner nightMode={nightMode}/>
-      <div id="navBtnsContainer">
+      <div id="navBtnsContainer" className={(nightMode)? "nightMode" : "dayMode"}>
         <NavBtns nightMode={nightMode} en={en} />
       </div>
       <button id={en ? "esp" : "usa"} className="languageBtn" onClick={handleLanguage}></button>
       {(nightMode)? (<BsSun className="modeBtn" id="sun" onClick={handleNightMode}/>): (<BsFillMoonFill className="modeBtn" id="moon" onClick={handleNightMode}/>)}
       {(en)? (<div onClick={handleDownloadEn}><CvButton nightMode={nightMode}/></div>): (<div onClick={handleDownload}><CvButton nightMode={nightMode}/></div>)}
-      {/* <img src={logo} style={{filter: "brightness(1.1)", mixBlendMode: "multiply"}}/> */}
+      {/* <img src={logo} style={{filter: "brightness(1.1)", mixBlendMode: "multiply"}}/>  */}
       <ContactForm en={en} />
       
     </div>

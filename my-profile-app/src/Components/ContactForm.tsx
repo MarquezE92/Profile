@@ -6,12 +6,19 @@ interface ContactFormProps {
   en: boolean
 }
 
+interface FormInput {
+  name: String;
+  email: String;
+  message: String
+
+}
+
 export const ContactForm: FC <ContactFormProps> = ({en}) => {
   const form = useRef();
 
-  const [input, setInput] = useState({"name": "", "email": "", "message":""});
+  const [input, setInput] = useState<FormInput>({"name": "", "email": "", "message":""});
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: any) => {
     e.preventDefault();
 
     emailjs.sendForm("service_hrhdxpp", "template_zv9ohli", form.current, "svsTiLFDtifbgz3cZ")
