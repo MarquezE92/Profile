@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { BsSun, BsFillMoonFill } from "react-icons/bs";
 import NavBtns from "./Components/NavBtns";
 import SocialBanner from "./Components/SocialBanner";
 import CvButton from "./Components/CvButton";
 import ContactForm from "./Components/ContactForm";
-import logo from "./images/e.png"
+import WelcomeBanner from "./Components/WelcomeBanner";
+import Slide from "./Components/Slide";
 import "./App.css";
 
 const App = ()=> {
@@ -34,6 +35,7 @@ const App = ()=> {
     link.click();
   }
 
+
   return (
     <div id="portfolioContainer" className={(nightMode)? "nightMode" : "dayMode"}>
       <SocialBanner nightMode={nightMode}/>
@@ -43,7 +45,8 @@ const App = ()=> {
       <button id={en ? "esp" : "usa"} className="languageBtn" onClick={handleLanguage}></button>
       {(nightMode)? (<BsSun className="modeBtn" id="sun" onClick={handleNightMode}/>): (<BsFillMoonFill className="modeBtn" id="moon" onClick={handleNightMode}/>)}
       {(en)? (<div onClick={handleDownloadEn}><CvButton nightMode={nightMode}/></div>): (<div onClick={handleDownload}><CvButton nightMode={nightMode}/></div>)}
-      {/* <img src={logo} style={{filter: "brightness(1.1)", mixBlendMode: "multiply"}}/>  */}
+      <WelcomeBanner/>
+     
       <ContactForm en={en} />
       
     </div>

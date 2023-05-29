@@ -4,6 +4,7 @@
 	--lightGreen: #abd1c6; /*var(--lightGreen)*/
 	--green: #004643;      /*var(--green)*/
 	--darkGreen: #001e1d;  /*var(--darkGreen)*/
+	--fondoCard: rgba(255,255,255,0.5); /*var(--fondoCard)*/
 }
 
 
@@ -28,12 +29,46 @@
 	position: fixed;
 	top: 1rem;
 	right: 4rem;
+	z-index: 2;
 }
 
 .modeBtn {
 	position: fixed;
 	top: 0.5rem;
 	right: 0.5rem;
+}
+/*---------------------------------------------- LOGO	*/
+.logoContainer {
+	height: fit-content;
+	width: fit-content;
+	background-color: var(--fondoCard);
+	border-radius: 50%;
+	position: relative
+}
+
+.logo {
+	height: 20rem;
+	filter: brightness(1.1);
+	mix-blend-mode: multiply;
+	transition: transform 1.5s;
+}
+.logo:hover {
+	transform: rotate(360deg);
+}
+
+/*---------------------------------------------- WelcomeBanner		*/
+.WelcomeContent {
+	height: fit-content;
+	display: flex;
+	width: 816px;
+	align-items: center;
+}
+
+.WelcomeTxtContainer {
+	width: 40rem;
+	height: 15rem;
+	color: var(--fondoCard);
+	font-weight: 600;
 }
 
 /*---------------------------------------------- CSS MODO NOCHE 	*/
