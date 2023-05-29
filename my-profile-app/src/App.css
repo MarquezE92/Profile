@@ -62,14 +62,21 @@
 	display: flex;
 	width: 816px;
 	align-items: center;
+	gap: 2rem;
 }
 
 .WelcomeTxtContainer {
 	width: 40rem;
-	height: 15rem;
-	color: var(--fondoCard);
+	height: fit-content;
+	
+	font-size: 1.4rem;
 	font-weight: 600;
 }
+
+.TxtColorNight {
+	color: var(--fondoCard);
+}
+
 
 /*---------------------------------------------- CSS MODO NOCHE 	*/
 .nightMode{

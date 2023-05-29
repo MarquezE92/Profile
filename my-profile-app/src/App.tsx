@@ -45,7 +45,7 @@ const App = ()=> {
       <button id={en ? "esp" : "usa"} className="languageBtn" onClick={handleLanguage}></button>
       {(nightMode)? (<BsSun className="modeBtn" id="sun" onClick={handleNightMode}/>): (<BsFillMoonFill className="modeBtn" id="moon" onClick={handleNightMode}/>)}
       {(en)? (<div onClick={handleDownloadEn}><CvButton nightMode={nightMode}/></div>): (<div onClick={handleDownload}><CvButton nightMode={nightMode}/></div>)}
-      <WelcomeBanner/>
+      <WelcomeBanner nightMode={nightMode} en={en}/>
      
       <ContactForm en={en} />
       
