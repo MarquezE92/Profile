@@ -1,0 +1,1 @@
+export const projects = [{title: "Agenddo"}, {title: "SnorInn-App"}, {title: "Pokemon-App"}]

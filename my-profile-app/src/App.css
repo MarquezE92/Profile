@@ -37,6 +37,20 @@
 	top: 0.5rem;
 	right: 0.5rem;
 }
+
+.sectionTitle {
+font-size: 1.4rem;
+font-weight: 600;
+width: 767px;
+}
+
+.sectionTitleNight {
+	font-size: 1.4rem;
+	font-weight: 600;
+	width: 767px;
+	color: var(--yellow);
+	}
+
 /*---------------------------------------------- LOGO	*/
 .logoContainer {
 	height: fit-content;
@@ -355,6 +369,15 @@
 	color: var(--yellow);
 }
 
+/*---------------------------------------------- PROJECTS 			*/
+.projectsDiv {
+width: 100%;
+height: fit-content;
+display: flex;
+flex-direction: column;
+gap: 1rem;
+align-items: center;
+}
 /*---------------------------------------------- CONTACT FORM	 	*/
 .contactContainer {
 	margin: auto;

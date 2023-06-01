@@ -5,6 +5,8 @@ import SocialBanner from "./Components/SocialBanner";
 import CvButton from "./Components/CvButton";
 import ContactForm from "./Components/ContactForm";
 import WelcomeBanner from "./Components/WelcomeBanner";
+import ProjectCard from "./Components/ProjectCard";
+import { projects } from "./Utils";
 import Slide from "./Components/Slide";
 import "./App.css";
 
@@ -45,8 +47,17 @@ const App = ()=> {
       <button id={en ? "esp" : "usa"} className="languageBtn" onClick={handleLanguage}></button>
       {(nightMode)? (<BsSun className="modeBtn" id="sun" onClick={handleNightMode}/>): (<BsFillMoonFill className="modeBtn" id="moon" onClick={handleNightMode}/>)}
       {(en)? (<div onClick={handleDownloadEn}><CvButton nightMode={nightMode}/></div>): (<div onClick={handleDownload}><CvButton nightMode={nightMode}/></div>)}
+      
       <WelcomeBanner nightMode={nightMode} en={en}/>
-     
+      <div className="projectsDiv">
+        <p className={nightMode ? "sectionTitleNight" : "sectionTitle"}>{en? "Projects" : "Proyectos"}</p>
+        {
+        projects?.map(project=>
+         <ProjectCard /> )
+      }
+      </div>
+      
+      
       <ContactForm en={en} />
       
     </div>
