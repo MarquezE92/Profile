@@ -1,1 +1,1 @@
-export const projects = [{title: "Agenddo"}, {title: "SnorInn-App"}, {title: "Pokemon-App"}]
+export const projects = [{title: "Agenddo", page: "https://app.agenddo.com/", repo: ""}, {title: "SnorInn-App", page: "https://snor-inn.vercel.app/", repo: "https://github.com/MarquezE92/SnorInn-App"}, {title: "Pokemon-App", page: "https://pi-pokemon-bice.vercel.app/home", repo: "https://github.com/MarquezE92/PI-Pokemon"}]

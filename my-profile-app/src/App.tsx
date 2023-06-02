@@ -53,7 +53,7 @@ const App = ()=> {
         <p className={nightMode ? "sectionTitleNight" : "sectionTitle"}>{en? "Projects" : "Proyectos"}</p>
         {
         projects?.map(project=>
-         <ProjectCard /> )
+         <ProjectCard title={project?.title} repo={project?.repo} page={project?.page}/> )
       }
       </div>
       
