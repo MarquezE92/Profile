@@ -7,7 +7,7 @@ import ContactForm from "./Components/ContactForm";
 import WelcomeBanner from "./Components/WelcomeBanner";
 import ProjectCard from "./Components/ProjectCard";
 import { projects } from "./Utils";
-import Slide from "./Components/Slide";
+import logo from "../src/images/e.png"
 import "./App.css";
 
 const App = ()=> {
@@ -49,11 +49,12 @@ const App = ()=> {
       {(en)? (<div onClick={handleDownloadEn}><CvButton nightMode={nightMode}/></div>): (<div onClick={handleDownload}><CvButton nightMode={nightMode}/></div>)}
       
       <WelcomeBanner nightMode={nightMode} en={en}/>
+      
       <div className="projectsDiv">
         <p className={nightMode ? "sectionTitleNight" : "sectionTitle"}>{en? "Projects" : "Proyectos"}</p>
         {
         projects?.map(project=>
-         <ProjectCard title={project?.title} repo={project?.repo} page={project?.page}/> )
+         <ProjectCard title={project?.title} repo={project?.repo} page={project?.page} imgs={project?.imgs}/> )
       }
       </div>
       
