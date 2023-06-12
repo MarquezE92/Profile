@@ -7,7 +7,6 @@ import ContactForm from "./Components/ContactForm";
 import WelcomeBanner from "./Components/WelcomeBanner";
 import ProjectCard from "./Components/ProjectCard";
 import { projects } from "./Utils";
-import logo from "../src/images/e.png"
 import "./App.css";
 
 const App = ()=> {
