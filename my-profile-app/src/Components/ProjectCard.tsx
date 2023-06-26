@@ -7,11 +7,15 @@ interface ProjectCardProps {
 	title: string,
     page: string,
     repo: string,
-    imgs: string[]
+    imgs: string[],
+    descriptionEs: string,
+    descriptionEn: string,
+    technologies: string[],
+    en: boolean
   }
 
 
-const ProjectCard: FC<ProjectCardProps> = ({title, page, repo, imgs})=> {
+const ProjectCard: FC<ProjectCardProps> = ({title, page, repo, imgs, descriptionEs, descriptionEn, technologies, en})=> {
 
     const handlePage = ()=> {
         window.open(page, '_blank');
@@ -28,6 +32,7 @@ const ProjectCard: FC<ProjectCardProps> = ({title, page, repo, imgs})=> {
             </div>
             <div className={styles.txtContainer}>
                 <div className={styles.title}>{title} {page? <BsBoxArrowUpRight onClick={handlePage} style={{cursor:"pointer"}}/> : null} {repo ? <BsGithub onClick={handleRepo} style={{cursor:"pointer"}}/> : null}</div>
+                <div>{en? descriptionEn : descriptionEs}</div>
             </div>
 
         </div>
