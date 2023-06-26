@@ -41,3 +41,11 @@
 .description {
     font-weight: 600;
    }
+
+.icon {
+    height: fit-content;
+    width: fit-content;
+    font-size: 16px;
+    padding-right: 8px;
+}
+

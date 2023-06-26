@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import styles from './ProjectCard.module.css';
 import Slide from './Slide';
-import { BsGithub, BsBoxArrowUpRight } from "react-icons/bs";
+import { BsGithub, BsBoxArrowUpRight, BsTools } from "react-icons/bs";
 
 interface ProjectCardProps {
 	title: string,
@@ -10,7 +10,7 @@ interface ProjectCardProps {
     imgs: string[],
     descriptionEs: string,
     descriptionEn: string,
-    technologies: string[],
+    technologies: string,
     en: boolean
   }
 
@@ -32,7 +32,12 @@ const ProjectCard: FC<ProjectCardProps> = ({title, page, repo, imgs, description
             </div>
             <div className={styles.txtContainer}>
                 <div className={styles.title}>{title} {page? <BsBoxArrowUpRight onClick={handlePage} style={{cursor:"pointer"}}/> : null} {repo ? <BsGithub onClick={handleRepo} style={{cursor:"pointer"}}/> : null}</div>
-                <div>{en? descriptionEn : descriptionEs}</div>
+                <div className={styles.description}>{en? descriptionEn : descriptionEs}</div>
+                <div>
+                    <BsTools className={styles.icon} /> 
+                    {technologies}
+                </div>
+
             </div>
 
         </div>
