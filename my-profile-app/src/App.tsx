@@ -9,27 +9,27 @@ import ProjectCard from "./Components/ProjectCard";
 import { projects } from "./Utils";
 import "./App.css";
 
-const App = ()=> {
+const App = () => {
 
-  const[en, setEn] = useState(true);
-  const[nightMode, setNightMode] = useState(true);
+  const [en, setEn] = useState(true);
+  const [nightMode, setNightMode] = useState(true);
 
-  const handleNightMode = ()=>{
+  const handleNightMode = () => {
     setNightMode(!nightMode)
   }
-  
-  const handleLanguage = ()=>{
+
+  const handleLanguage = () => {
     setEn(!en)
   }
 
-  const handleDownload = ()=> {
+  const handleDownload = () => {
     const link = document.createElement('a');
     link.href = '../Public/Assets/CV-Márquez-Estefanía.docx';
     link.download = 'CV-Márquez-Estefanía.docx';
     link.click();
   }
 
-  const handleDownloadEn = ()=> {
+  const handleDownloadEn = () => {
     const link = document.createElement('a');
     link.href = '../Public/Assets/CV(en)-Márquez-Estefanía.docx';
     link.download = 'CV-Estefanía-Márquez.docx';
@@ -38,28 +38,33 @@ const App = ()=> {
 
 
   return (
-    <div id="portfolioContainer" className={(nightMode)? "nightMode" : "dayMode"}>
-      <SocialBanner nightMode={nightMode}/>
-      <div id="navBtnsContainer" className={(nightMode)? "nightMode" : "dayMode"}>
+    <div id="portfolioContainer" className={(nightMode) ? "nightMode" : "dayMode"}>
+      <SocialBanner nightMode={nightMode} />
+      <div id="navBtnsContainer" className={(nightMode) ? "nightMode" : "dayMode"}>
         <NavBtns nightMode={nightMode} en={en} />
       </div>
       <button id={en ? "esp" : "usa"} className="languageBtn" onClick={handleLanguage}></button>
-      {(nightMode)? (<BsSun className="modeBtn" id="sun" onClick={handleNightMode}/>): (<BsFillMoonFill className="modeBtn" id="moon" onClick={handleNightMode}/>)}
-      {(en)? (<div onClick={handleDownloadEn}><CvButton nightMode={nightMode}/></div>): (<div onClick={handleDownload}><CvButton nightMode={nightMode}/></div>)}
-      
-      <WelcomeBanner nightMode={nightMode} en={en}/>
-      
-      <div className="projectsDiv">
-        <p className={nightMode ? "sectionTitleNight" : "sectionTitle"}>{en? "Projects" : "Proyectos"}</p>
-        {
-        projects?.map(project=>
-         <ProjectCard en={en} title={project?.title} repo={project?.repo} page={project?.page} imgs={project?.imgs} descriptionEs={project.descriptionEs} descriptionEn={project.descriptionEn} technologies={project.technologies} /> )
-      }
+      {(nightMode) ? (<BsSun className="modeBtn" id="sun" onClick={handleNightMode} />) : (<BsFillMoonFill className="modeBtn" id="moon" onClick={handleNightMode} />)}
+      {(en) ? (<div onClick={handleDownloadEn}><CvButton nightMode={nightMode} /></div>) : (<div onClick={handleDownload}><CvButton nightMode={nightMode} /></div>)}
+
+      <WelcomeBanner nightMode={nightMode} en={en} />
+      <div className="allSectionsDiv">
+        <div className="sectionsDiv">
+          <p className={nightMode ? "sectionTitleNight" : "sectionTitle"}>{en ? "Projects" : "Proyectos"}</p>
+          {
+            projects?.map(project =>
+              <ProjectCard en={en} title={project?.title} repo={project?.repo} page={project?.page} imgs={project?.imgs} descriptionEs={project.descriptionEs} descriptionEn={project.descriptionEn} technologies={project.technologies} />)
+          }
+        </div>
+
+        <div className="sectionsDiv">
+          <p className={nightMode ? "sectionTitleNight" : "sectionTitle"}>{en ? "Contact me" : "Contactame"}</p>
+          <ContactForm en={en} />
+        </div>
       </div>
-      
-      
-      <ContactForm en={en} />
-      
+
+
+
     </div>
   )
 }

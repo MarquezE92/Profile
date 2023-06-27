@@ -369,8 +369,14 @@ width: 767px;
 	color: var(--yellow);
 }
 
-/*---------------------------------------------- PROJECTS 			*/
-.projectsDiv {
+/*---------------------------------------------- SECTIONS			*/
+.allSectionsDiv {
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+}
+
+.sectionsDiv {
 width: 100%;
 height: fit-content;
 display: flex;

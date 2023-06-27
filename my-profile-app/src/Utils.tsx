@@ -12,5 +12,5 @@ export const projects = [
     {title: "Pokemon-App", 
     descriptionEs: "Web App que te permite explorar los 40 primeros pokémons y crear los tuyos.", 
     descriptionEn: "Web App that allows you to explore the first 40 pokémons and create your own.",
-    technologies: "React, Redux, vanilla CSS, Node.js, Express, PostgreSQL, Sequelize, Vercel, Railway", 
+    technologies: "React, Redux, vanilla CSS, Node.js, Express, PostgreSQL, Sequelize, Vercel, Railway.", 
     page: "https://pi-pokemon-bice.vercel.app/home", repo: "https://github.com/MarquezE92/PI-Pokemon",  imgs: ["../src/images/Landing.png", "../src/images/home.png", "../src/images/form.png", "../src/images/cards.png", "../src/images/Detail.png",]}]
