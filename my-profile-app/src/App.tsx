@@ -6,6 +6,7 @@ import CvButton from "./Components/CvButton";
 import ContactForm from "./Components/ContactForm";
 import WelcomeBanner from "./Components/WelcomeBanner";
 import ProjectCard from "./Components/ProjectCard";
+import Certificates from "./Components/Certificates";
 import { projects } from "./Utils";
 import "./App.css";
 
@@ -55,6 +56,11 @@ const App = () => {
             projects?.map(project =>
               <ProjectCard en={en} title={project?.title} repo={project?.repo} page={project?.page} imgs={project?.imgs} descriptionEs={project.descriptionEs} descriptionEn={project.descriptionEn} technologies={project.technologies} />)
           }
+        </div>
+
+        <div className="sectionsDiv">
+          <p className={nightMode ? "sectionTitleNight" : "sectionTitle"}>{en ? "Certificates" : "Certificados"}</p>
+          <Certificates/>
         </div>
 
         <div className="sectionsDiv">
