@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './Certificates.module.css';
-import fullstack from '../images/Certificado-Henry.png';
-import ingles from '../images/Ingles.png';
-import japones from '../images/Japones.png';
-import scrum from '../images/Scrum.png'
+import fullstack from '../../images/Certificado-Henry.png';
+import ingles from '../../images/Ingles.png';
+import japones from '../../images/Japones.png';
+import scrum from '../../images/Scrum.png'
 
 const Certificates = ()=> {
 

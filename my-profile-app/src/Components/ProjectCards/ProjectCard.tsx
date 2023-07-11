@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import styles from './ProjectCard.module.css';
-import Slide from './Slide';
+import Slide from '../Slide/Slide';
 import { BsGithub, BsBoxArrowUpRight, BsTools } from "react-icons/bs";
 
 interface ProjectCardProps {

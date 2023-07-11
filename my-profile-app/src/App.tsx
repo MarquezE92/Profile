@@ -3,10 +3,10 @@ import { BsSun, BsFillMoonFill } from "react-icons/bs";
 import NavBtns from "./Components/NavBtns";
 import SocialBanner from "./Components/SocialBanner";
 import CvButton from "./Components/CvButton";
-import ContactForm from "./Components/ContactForm";
+import ContactForm from "./Components/ContactForm/ContactForm";
 import WelcomeBanner from "./Components/WelcomeBanner";
-import ProjectCard from "./Components/ProjectCard";
-import Certificates from "./Components/Certificates";
+import ProjectCard from "./Components/ProjectCards/ProjectCard";
+import Certificates from "./Components/Certificates/Certificates";
 import { projects } from "./Utils";
 import "./App.css";
 
