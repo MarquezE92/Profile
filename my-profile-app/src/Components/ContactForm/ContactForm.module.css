@@ -1,0 +1,53 @@
+.contactContainer {
+	margin: auto;
+	width: 50rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 1.3rem;
+	font-weight: 600;
+	padding: 1rem;
+	background: rgba(255,255,255,0.5);
+	color: var(--darkGreen);
+	border-radius: 1rem;
+	}
+
+.contactContainerInput {
+	margin: 0.3rem;
+	border: none;
+	min-height: 1.8rem;
+	border-radius: 0.7rem;
+	background: rgba(255,255,255,0.7);
+	padding: 0 0.3rem 0 0.4rem;
+	font-size: 1rem;
+}
+
+.contactContainerTextarea {
+	margin: 0.3rem;
+	border: none;
+	border-radius: 0.7rem;
+	background: rgba(255,255,255,0.7);
+	padding: 0.3rem 0.3rem 0 0.4rem;
+	font-size: 1rem;
+	min-height: 4rem;
+}
+
+.contactContainerSubmit {
+    margin: 0.3rem;
+	border: none;
+	border-radius: 0.7rem;
+    padding: 0.3rem 0.3rem 0 0.4rem;
+	background-color: var(--darkGreen);
+	color: var(--yellow);
+	min-height: 3rem;
+	font-size: 1.3rem;
+	font-weight: 600;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.contactContainerSubmit:hover {
+	background-color: var(--yellow);
+	color: var(--darkGreen);
+	box-shadow: 0.2rem 0rem 0.5rem var(--darkGreen);
+}
