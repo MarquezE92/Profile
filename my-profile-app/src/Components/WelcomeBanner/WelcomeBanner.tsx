@@ -1,5 +1,6 @@
 import {FC} from 'react';
-import logo from "../images/e.png";
+import styles from './WelcomeBanner.module.css';
+import logo from "../../images/e.png";
 
 interface WelcomeBannerProps {
     nightMode: boolean;
@@ -9,9 +10,9 @@ interface WelcomeBannerProps {
 const WelcomeBanner: FC<WelcomeBannerProps> = ({nightMode, en})=> {
     return (
         <div style={{width:"100%", display: "flex", justifyContent: "center", padding: '4rem 0 2rem 0'}}>
-            <div className="WelcomeContent">
-                <div className="logoContainer"><img src={logo} className="logo" /></div>
-                <div className="WelcomeTxtContainer">
+            <div className={styles.WelcomeContent}>
+                <div className={styles.logoContainer} ><img src={logo} className={styles.logo}/></div>
+                <div className={styles.WelcomeTxtContainer}>
                     <p className={nightMode ? 'TxtColorNight' : 'TxtColorDay'}>{en ? '< Hello! />' :'< ¡Hola! />'}</p>
                     <br/>
                     

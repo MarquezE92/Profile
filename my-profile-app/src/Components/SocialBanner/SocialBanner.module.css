@@ -1,0 +1,50 @@
+
+.bannerNightMode {
+	height: 10rem;
+	width: 3rem;
+	background-color: var(--lightGreen);
+	border-radius: 0 1rem 1rem 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+	top: 8rem;
+}
+
+.bannerNightMode .bannerIcon {
+	height: 1.7rem;
+	width: 1.7rem;
+	transition: 0.5s;
+	cursor: pointer;
+	color: var(--green);
+}
+
+.bannerNightMode .bannerIcon:hover {
+	color: var(--darkGreen);
+}
+
+.bannerDayMode {
+	height: 10rem;
+	width: 3rem;
+	background-color: var(--green);
+	border-radius: 0 1rem 1rem 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+	top: 8rem;
+}
+
+.bannerDayMode .bannerIcon {
+	height: 1.7rem;
+	width: 1.7rem;
+	transition: 0.5s;
+	cursor: pointer;
+	color: var(--lightGreen);
+}
+
+.bannerDayMode .bannerIcon:hover {
+	color: var(--yellow);
+}

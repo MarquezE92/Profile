@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { BsSun, BsFillMoonFill } from "react-icons/bs";
-import NavBtns from "./Components/NavBtns";
-import SocialBanner from "./Components/SocialBanner";
-import CvButton from "./Components/CvButton";
+import NavBtns from "./Components/NavBtns/NavBtns";
+import SocialBanner from "./Components/SocialBanner/SocialBanner";
+import CvButton from "./Components/CvButton/CvButton";
 import ContactForm from "./Components/ContactForm/ContactForm";
-import WelcomeBanner from "./Components/WelcomeBanner";
+import WelcomeBanner from "./Components/WelcomeBanner/WelcomeBanner";
 import ProjectCard from "./Components/ProjectCards/ProjectCard";
 import Certificates from "./Components/Certificates/Certificates";
 import { projects } from "./Utils";

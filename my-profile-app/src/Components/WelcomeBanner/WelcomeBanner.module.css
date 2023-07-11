@@ -1,0 +1,36 @@
+.WelcomeContent {
+	height: fit-content;
+	display: flex;
+	width: 816px;
+	align-items: center;
+	gap: 2rem;
+}
+
+.WelcomeTxtContainer {
+	width: 40rem;
+	height: fit-content;
+	
+	font-size: 1.4rem;
+	font-weight: 600;
+}
+
+
+/*---------------------------------------------- LOGO	*/
+.logoContainer {
+	height: fit-content;
+	width: fit-content;
+	background-color: var(--fondoCard);
+	border-radius: 50%;
+	position: relative
+}
+
+.logo {
+	height: 20rem;
+	filter: brightness(1.1);
+	mix-blend-mode: multiply;
+	transition: transform 1.5s;
+}
+.logo:hover {
+	transform: rotate(360deg);
+}
+

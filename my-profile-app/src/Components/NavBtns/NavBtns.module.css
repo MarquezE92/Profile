@@ -1,0 +1,80 @@
+
+.btnNightMode {
+	height: 2.4rem;
+	width: 9rem;
+ 	margin: 0 0.3rem;
+ 	font-size: 1.5rem;
+ 	cursor: pointer;
+ 	border: none;
+ 	outline: none;
+ 	background: transparent;
+ 	color: var(--yellow);
+ 	font-weight: 600;
+ 	position: relative;
+ 	transition: all 0.5s;
+ 	z-index: 1;
+}
+
+.btnNightMode::before {
+ 	content: "";
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	width: 0.25rem;
+ 	height: 100%;
+ 	background-color: var(--yellow);
+ 	z-index: -1;
+ 	transition: all 0.5s;
+}
+
+.btnNightMode:hover::before {
+	width: 100%;
+}
+
+.btnNightMode:hover {
+	color: var(--darkGreen);
+}
+
+.btnNightMode:active:before {
+	background: rgba(249, 188, 96, 0.6);
+}
+
+/*---------------------------------------------- BOTONES NAV	*/
+.btnDayMode {
+	width: 9rem;
+ 	height: 2.4rem;
+ 	font-size: 1.5rem;
+ 	cursor: pointer;
+ 	border: none;
+ 	outline: none;
+ 	background: transparent;
+ 	color: var(--darkGreen);
+ 	font-weight: 700;
+ 	position: relative;
+ 	transition: all 0.5s;
+ 	z-index: 1;
+}
+
+.btnDayMode::before {
+ 	content: "";
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	width: 0.25rem;
+ 	height: 100%;
+ 	background-color: var(--darkGreen);
+ 	z-index: -1;
+ 	transition: all 0.5s;
+}
+
+.btnDayMode:hover::before {
+	width: 100%;
+}
+
+.btnDayMode:hover {
+	color: var(--yellow);
+}
+
+.btnDayMode:active:before {
+	background: rgba(0, 30, 29, 0.6);
+}

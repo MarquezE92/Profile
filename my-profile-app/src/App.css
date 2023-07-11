@@ -12,7 +12,7 @@
 	width:100vw;
 	height: fit-content;
     min-height:100vh;
-	padding-top: 5rem;
+	padding: 5rem 0;
 }
 
 #navBtnsContainer {
@@ -51,52 +51,17 @@ width: 767px;
 	color: var(--yellow);
 	}
 
-/*---------------------------------------------- LOGO	*/
-.logoContainer {
-	height: fit-content;
-	width: fit-content;
-	background-color: var(--fondoCard);
-	border-radius: 50%;
-	position: relative
-}
-
-.logo {
-	height: 20rem;
-	filter: brightness(1.1);
-	mix-blend-mode: multiply;
-	transition: transform 1.5s;
-}
-.logo:hover {
-	transform: rotate(360deg);
-}
-
-/*---------------------------------------------- WelcomeBanner		*/
-.WelcomeContent {
-	height: fit-content;
-	display: flex;
-	width: 816px;
-	align-items: center;
-	gap: 2rem;
-}
-
-.WelcomeTxtContainer {
-	width: 40rem;
-	height: fit-content;
-	
-	font-size: 1.4rem;
-	font-weight: 600;
-}
-
-.TxtColorNight {
-	color: var(--fondoCard);
-}
-
 
 /*---------------------------------------------- CSS MODO NOCHE 	*/
 .nightMode{
 	background-color: var(--green);
 	z-index: 1;
 }
+
+.TxtColorNight {
+	color: var(--fondoCard);
+}
+
 
 /*---------------------------------------------- ICONO SOL 	*/
 
@@ -118,144 +83,9 @@ width: 767px;
 	color: var(--darkGreen);
 }
 
-/*---------------------------------------------- BOTONES NAV 	*/
 
-.btnNightMode {
-	height: 2.4rem;
-	width: 9rem;
- 	margin: 0 0.3rem;
- 	font-size: 1.5rem;
- 	cursor: pointer;
- 	border: none;
- 	outline: none;
- 	background: transparent;
- 	color: var(--yellow);
- 	font-weight: 600;
- 	position: relative;
- 	transition: all 0.5s;
- 	z-index: 1;
-}
 
-.btnNightMode::before {
- 	content: "";
- 	position: absolute;
- 	top: 0;
- 	left: 0;
- 	width: 0.25rem;
- 	height: 100%;
- 	background-color: var(--yellow);
- 	z-index: -1;
- 	transition: all 0.5s;
-}
 
-.btnNightMode:hover::before {
-	width: 100%;
-}
-
-.btnNightMode:hover {
-	color: var(--darkGreen);
-}
-
-.btnNightMode:active:before {
-	background: rgba(249, 188, 96, 0.6);
-}
-
-/*---------------------------------------------- BANNER CONTACTO REDES	 	*/
-
-.bannerNightMode {
-	height: 10rem;
-	width: 3rem;
-	background-color: var(--lightGreen);
-	border-radius: 0 1rem 1rem 0;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-	position: fixed;
-	top: 8rem;
-}
-
-.bannerNightMode .bannerIcon {
-	height: 1.7rem;
-	width: 1.7rem;
-	transition: 0.5s;
-	cursor: pointer;
-	color: var(--green);
-}
-
-.bannerNightMode .bannerIcon:hover {
-	color: var(--darkGreen);
-}
-/*---------------------------------------------- CV DOWNLOAD		*/
-
-.download-button {
- cursor: pointer;
- position: fixed;
- left: 1rem;
- top: 1rem;
- border: none;
- color: white;
- font-size: 15px;
- font-weight: 600;
- border-radius: 4px;
- z-index: 1;
-}
-
-.download-button .docs {
- display: flex;
- align-items: center;
- justify-content: space-between;
- gap: 10px;
- min-height: 40px;
- padding: 0 10px;
- border-radius: 4px;
- z-index: 1;
- background-color: #242a35;
- border: solid 1px #e8e8e82d;
- transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
-}
-
-.download-button:hover {
- box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-
-.download {
- position: absolute;
- inset: 0;
- display: flex;
- align-items: center;
- justify-content: center;
- max-width: 90%;
- margin: 0 auto;
- z-index: -1;
- border-radius: 4px;
- transform: translateY(0%);
- background-color: #01e056;
- border: solid 1px #01e0572d;
- transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
-}
-
-.download-button:hover .download {
- transform: translateY(100%)
-}
-
-.download svg polyline,.download svg line {
- animation: docs 1s infinite;
-}
-
-@keyframes docs {
- 0% {
-  transform: translateY(0%);
- }
-
- 50% {
-  transform: translateY(-15%);
- }
-
- 100% {
-  transform: translateY(0%);
- }
-}
 /*---------------------------------------------- CSS MODO DIA 	 	*/
 
 .dayMode {
@@ -281,45 +111,6 @@ width: 767px;
 	color: var(--yellow);
 }
 
-/*---------------------------------------------- BOTONES NAV	*/
-.btnDayMode {
-	width: 9rem;
- 	height: 2.4rem;
- 	font-size: 1.5rem;
- 	cursor: pointer;
- 	border: none;
- 	outline: none;
- 	background: transparent;
- 	color: var(--darkGreen);
- 	font-weight: 700;
- 	position: relative;
- 	transition: all 0.5s;
- 	z-index: 1;
-}
-
-.btnDayMode::before {
- 	content: "";
- 	position: absolute;
- 	top: 0;
- 	left: 0;
- 	width: 0.25rem;
- 	height: 100%;
- 	background-color: var(--darkGreen);
- 	z-index: -1;
- 	transition: all 0.5s;
-}
-
-.btnDayMode:hover::before {
-	width: 100%;
-}
-
-.btnDayMode:hover {
-	color: var(--yellow);
-}
-
-.btnDayMode:active:before {
-	background: rgba(0, 30, 29, 0.6);
-}
 
 /*---------------------------------------------- BOTONES LENGUAJE		*/
 
@@ -342,32 +133,6 @@ width: 767px;
 	background: linear-gradient(0deg, rgba(186,10,10,1) 0%, rgba(186,10,10,1) 26%, rgba(236,220,32,1) 27%, rgba(236,220,32,1) 74%,  rgba(186,10,10,1) 75%, rgba(186,10,10,1) 100%);
 }
 
-/*---------------------------------------------- BANNER CONTACTO REDES	 	*/
-
-.bannerDayMode {
-	height: 10rem;
-	width: 3rem;
-	background-color: var(--green);
-	border-radius: 0 1rem 1rem 0;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-	position: fixed;
-	top: 8rem;
-}
-
-.bannerDayMode .bannerIcon {
-	height: 1.7rem;
-	width: 1.7rem;
-	transition: 0.5s;
-	cursor: pointer;
-	color: var(--lightGreen);
-}
-
-.bannerDayMode .bannerIcon:hover {
-	color: var(--yellow);
-}
 
 /*---------------------------------------------- SECTIONS			*/
 .allSectionsDiv {
@@ -384,4 +149,4 @@ flex-direction: column;
 gap: 1rem;
 align-items: center;
 }
-/*---------------------------------------------- CONTACT FORM	 	*/
+
