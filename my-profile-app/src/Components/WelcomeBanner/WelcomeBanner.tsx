@@ -8,7 +8,11 @@ interface WelcomeBannerProps {
   }
 
 const WelcomeBanner: FC<WelcomeBannerProps> = ({nightMode, en})=> {
+
+
+
     return (
+
         <div style={{width:"100%", display: "flex", justifyContent: "center", padding: '4rem 0 2rem 0'}}>
             <div className={styles.WelcomeContent}>
                 <div className={styles.logoContainer} ><img src={logo} className={styles.logo}/></div>
@@ -27,6 +31,7 @@ const WelcomeBanner: FC<WelcomeBannerProps> = ({nightMode, en})=> {
             </div>
         
       </div>
+
     )
 }
 

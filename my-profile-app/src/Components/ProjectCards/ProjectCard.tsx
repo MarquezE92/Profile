@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import { motion } from 'framer-motion';
 import styles from './ProjectCard.module.css';
 import Slide from '../Slide/Slide';
 import { BsGithub, BsBoxArrowUpRight, BsTools } from "react-icons/bs";
@@ -17,6 +18,11 @@ interface ProjectCardProps {
 
 const ProjectCard: FC<ProjectCardProps> = ({title, page, repo, imgs, descriptionEs, descriptionEn, technologies, en})=> {
 
+    const fadeInAnimation = {
+    initial: { opacity: 0, y:25 },
+    whileInView: { opacity: 1, y:0, transition:{duration:1} }
+  };
+
     const handlePage = ()=> {
         window.open(page, '_blank');
     }
@@ -26,6 +32,11 @@ const ProjectCard: FC<ProjectCardProps> = ({title, page, repo, imgs, description
     }
 
     return (
+        <motion.div
+      initial="initial"
+      whileInView="whileInView"
+      variants={fadeInAnimation}
+    >
         <div className={styles.container}>
             <div className={styles.imgContainer}>
                 <Slide imgs={imgs}/>
@@ -41,6 +52,8 @@ const ProjectCard: FC<ProjectCardProps> = ({title, page, repo, imgs, description
             </div>
 
         </div>
+    </motion.div>
+        
     )
 }
 
