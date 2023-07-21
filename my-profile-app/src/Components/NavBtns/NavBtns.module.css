@@ -1,7 +1,7 @@
 
 .btnNightMode {
 	height: 2.4rem;
-	width: 9rem;
+	width: 11rem;
  	margin: 0 0.3rem;
  	font-size: 1.5rem;
  	cursor: pointer;
@@ -41,7 +41,7 @@
 
 /*---------------------------------------------- BOTONES NAV	*/
 .btnDayMode {
-	width: 9rem;
+	width: 11rem;
  	height: 2.4rem;
  	font-size: 1.5rem;
  	cursor: pointer;
