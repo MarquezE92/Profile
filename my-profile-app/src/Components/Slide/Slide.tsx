@@ -23,8 +23,8 @@ const Slide: FC<SlideProps> = ({imgs})=> {
 
     return (
 
-        <div className="carousel">
-            <div className="carousel-inner">
+        <div >
+            <div >
                 {
                     imgs?.map((image, index)=>
                        <img key={index} className={imgShowed === index ? styles.imgSlide : styles.notShow} src={image} alt="Imagen 1"/> )
