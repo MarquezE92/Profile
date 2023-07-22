@@ -14,3 +14,71 @@ export const projects = [
     descriptionEn: "Web App that allows you to explore the first 40 pokémons and create your own.",
     technologies: "React, Redux, vanilla CSS, Node.js, Express, PostgreSQL, Sequelize, Vercel, Railway.", 
     page: "https://pi-pokemon-bice.vercel.app/home", repo: "https://github.com/MarquezE92/PI-Pokemon",  imgs: ["../src/images/Landing.png", "../src/images/home.png", "../src/images/form.png", "../src/images/cards.png", "../src/images/Detail.png",]}]
+
+export const technologies = [
+    {name: "HTML",
+    img: "../src/images/html_icon.svg"
+},
+{name: "CSS",
+    img: "../src/images/css_icon.svg"
+},
+{name: "JavaScript",
+    img: "../src/images/javascript_icon.svg"
+},
+{name: "TypeScript",
+    img: "../src/images/typescript_icon.svg"
+},
+{name: "React",
+    img: "../src/images/react_icon.svg"
+},
+{name: "Redux",
+    img: "../src/images/redux_icon.svg"
+},
+{name: "Node.js",
+    img: "../src/images/node_icon.svg"
+},
+{name: "Express",
+    img: "../src/images/expressjs_icon.svg"
+},
+{
+    name: "PostgreSQL",
+    img: "../src/images/postgresql_icon.svg"
+},
+{
+    name: "Sequelize",
+    img: "../src/images/sequelize_icon.svg"
+},
+{
+    name: "MongoDB",
+    img: "../src/images/mongodb_icon.svg"
+},
+{
+    name: "Bootstrap",
+    img: "../src/images/bootstrap_icon.svg"
+},
+{
+    name: "MUI",
+    img: "../src/images/mui_icon.svg"
+},
+
+{
+    name: "Scrum",
+    img: "../src/images/scrum_icon.svg"
+},
+{
+    name: "Git",
+    img: "../src/images/git_icon.svg"
+},
+{
+    name: "GitHub",
+    img: "../src/images/github_icon.svg"
+},
+{
+    name: "Node package manager",
+    img: "../src/images/npm_icon.svg"
+},
+{
+    name: "Postman",
+    img: "../src/images/postman.png"
+}
+]
