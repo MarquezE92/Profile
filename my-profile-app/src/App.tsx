@@ -7,6 +7,7 @@ import ContactForm from "./Components/ContactForm/ContactForm";
 import WelcomeBanner from "./Components/WelcomeBanner/WelcomeBanner";
 import ProjectCard from "./Components/ProjectCards/ProjectCard";
 import Certificates from "./Components/Certificates/Certificates";
+import TechnologiesCards from "./Components/TechnologiesCards/TechnologiesCards";
 import { projects } from "./Utils";
 import "./App.css";
 
@@ -49,7 +50,13 @@ const App = () => {
       {(en) ? (<div onClick={handleDownloadEn}><CvButton nightMode={nightMode} /></div>) : (<div onClick={handleDownload}><CvButton nightMode={nightMode} /></div>)}
 
       <WelcomeBanner nightMode={nightMode} en={en} />
+
       <div className="allSectionsDiv">
+        <div className="sectionsDiv">
+          <p className={nightMode ? "sectionTitleNight" : "sectionTitle"}>{en ? "Technologies" : "Tecnologías"}</p>
+          <TechnologiesCards />
+        </div>
+
         <div className="sectionsDiv">
           <p className={nightMode ? "sectionTitleNight" : "sectionTitle"}>{en ? "Projects" : "Proyectos"}</p>
           {
