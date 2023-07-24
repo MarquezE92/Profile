@@ -5,6 +5,7 @@ import SocialBanner from "./Components/SocialBanner/SocialBanner";
 import CvButton from "./Components/CvButton/CvButton";
 import ContactForm from "./Components/ContactForm/ContactForm";
 import WelcomeBanner from "./Components/WelcomeBanner/WelcomeBanner";
+import AboutMe from "./Components/AboutMe/AboutMe";
 import ProjectCard from "./Components/ProjectCards/ProjectCard";
 import Certificates from "./Components/Certificates/Certificates";
 import TechnologiesCards from "./Components/TechnologiesCards/TechnologiesCards";
@@ -52,6 +53,12 @@ const App = () => {
       <WelcomeBanner nightMode={nightMode} en={en} />
 
       <div className="allSectionsDiv">
+
+        <div className="sectionsDiv">
+          <h2 className={nightMode ? "sectionTitleNight" : "sectionTitle"}>{en ? "About me" : "Sobre mí"}</h2>
+          <AboutMe nightMode={nightMode} en={en}/>
+        </div>
+
         <div className="sectionsDiv">
           <h2 className={nightMode ? "sectionTitleNight" : "sectionTitle"}>{en ? "Technologies" : "Tecnologías"}</h2>
           <TechnologiesCards />
