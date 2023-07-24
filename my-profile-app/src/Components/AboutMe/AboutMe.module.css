@@ -1,0 +1,13 @@
+#text {
+    width: 50rem;
+    font-size: 1.5rem;
+}
+
+/* Estilo para el contenedor de la palabra */
+.wordWithTooltip {
+    position: relative;
+    cursor:cell;
+    font-weight: 700;
+  }
+  
+ 
