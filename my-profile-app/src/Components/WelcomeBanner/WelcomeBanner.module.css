@@ -47,7 +47,7 @@
 	mix-blend-mode: multiply;
 	transition: transform 1s;
 	position: relative;
-	z-index: 2;
+	z-index: 1;
 }
 .logo:hover {
 	transform: rotate(360deg);
@@ -61,7 +61,7 @@
     height: 20rem;
     object-fit: cover;
 	border-radius: 50%;
-	z-index: 5;
+	z-index: 2;
 	opacity: 0;
 	transition: all 1.5s cubic-bezier(0.48, 0, 0.12, 1);
 }
