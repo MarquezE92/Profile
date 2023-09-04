@@ -52,19 +52,19 @@ const App = () => {
 
       <WelcomeBanner nightMode={nightMode} en={en} />
 
-      <div className="allSectionsDiv">
+      <div className="allSectionsDiv" >
 
-        <div className="sectionsDiv">
+        <div className="sectionsDiv" id="About me">
           <h2 className={nightMode ? "sectionTitleNight" : "sectionTitle"}>{en ? "About me" : "Sobre mí"}</h2>
           <AboutMe nightMode={nightMode} en={en}/>
         </div>
 
-        <div className="sectionsDiv">
+        <div className="sectionsDiv" id="Technologies">
           <h2 className={nightMode ? "sectionTitleNight" : "sectionTitle"}>{en ? "Technologies" : "Tecnologías"}</h2>
           <TechnologiesCards />
         </div>
 
-        <div className="sectionsDiv">
+        <div className="sectionsDiv" id="Projects">
           <h2 className={nightMode ? "sectionTitleNight" : "sectionTitle"}>{en ? "Projects" : "Proyectos"}</h2>
           {
             projects?.map(project =>
@@ -72,12 +72,12 @@ const App = () => {
           }
         </div>
 
-        <div className="sectionsDiv">
+        <div className="sectionsDiv" id="Certificates">
           <h2 className={nightMode ? "sectionTitleNight" : "sectionTitle"}>{en ? "Certificates" : "Certificados"}</h2>
           <Certificates/>
         </div>
 
-        <div className="sectionsDiv">
+        <div className="sectionsDiv" id="Contact me">
           <h2 className={nightMode ? "sectionTitleNight" : "sectionTitle"}>{en ? "Contact me" : "Contactame"}</h2>
           <ContactForm en={en} />
         </div>
