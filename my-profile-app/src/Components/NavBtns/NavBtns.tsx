@@ -10,7 +10,7 @@ interface NavBtnsProps {
 const handleScrollToClick = (id:string) => {
 	const element = document.getElementById(id);
 	if (element) {
-	  const top = element.offsetTop;
+	  const top = element.offsetTop -100;
 	  window.scrollTo({ top, behavior: "smooth" });
 	}
   };
