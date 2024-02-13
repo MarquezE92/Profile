@@ -19,13 +19,13 @@ const TechnologiesCards = ()=> {
         <div className={styles.contenedorCards}>
           {
             technologies?.map(tech =>
-              <div className={styles.card}>
+              <div key={tech.name} className={styles.card}>
                 <img className={styles.icono} src={tech.img}/>
                 <div className={styles.card__name}>
                    <p className={styles.name}>{tech.name}</p> 
                 </div>
                 
-                </div>)
+              </div>)
           }
         </div>
         </motion.div>

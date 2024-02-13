@@ -68,7 +68,7 @@ const App = () => {
           <h2 className={nightMode ? "sectionTitleNight" : "sectionTitle"}>{en ? "Projects" : "Proyectos"}</h2>
           {
             projects?.map(project =>
-              <ProjectCard en={en} title={project?.title} repo={project?.repo} page={project?.page} imgs={project?.imgs} descriptionEs={project.descriptionEs} descriptionEn={project.descriptionEn} technologies={project.technologies} />)
+              <div key={project?.title}><ProjectCard en={en} title={project?.title} repo={project?.repo} page={project?.page} imgs={project?.imgs} descriptionEs={project.descriptionEs} descriptionEn={project.descriptionEn} technologies={project.technologies} /></div>)
           }
         </div>
 

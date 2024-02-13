@@ -40,6 +40,9 @@ export const technologies = [
 {name: "Express",
     img: "../src/images/expressjs_icon.svg"
 },
+{name: "Python",
+    img: "../src/images/python_icon.svg"
+},
 {
     name: "PostgreSQL",
     img: "../src/images/postgresql_icon.svg"
