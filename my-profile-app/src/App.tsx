@@ -27,15 +27,15 @@ const App = () => {
 
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '../Public/Assets/CV-Márquez-Estefanía.docx';
-    link.download = 'CV-Márquez-Estefanía.docx';
+    link.href = '../Public/Assets/CV-Márquez-Estefanía.pdf';
+    link.download = 'CV-Márquez-Estefanía.pdf';
     link.click();
   }
 
   const handleDownloadEn = () => {
     const link = document.createElement('a');
-    link.href = '../Public/Assets/CV(en)-Márquez-Estefanía.docx';
-    link.download = 'CV-Estefanía-Márquez.docx';
+    link.href = '../Public/Assets/CV(en)-Márquez-Estefanía.pdf';
+    link.download = 'CV-Estefanía-Márquez.pdf';
     link.click();
   }
 

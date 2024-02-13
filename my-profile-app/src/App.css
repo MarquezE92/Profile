@@ -30,7 +30,7 @@
 	position: fixed;
 	top: 1rem;
 	right: 4rem;
-	z-index: 2;
+	z-index: 10;
 }
 
 .modeBtn {
