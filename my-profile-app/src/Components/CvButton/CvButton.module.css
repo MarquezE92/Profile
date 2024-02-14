@@ -68,3 +68,9 @@
      transform: translateY(0%);
     }
    }
+
+   @media all and (max-width: 1120px) {
+    .downloadButton {
+        display: none;
+    }
+   }

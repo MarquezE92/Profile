@@ -1,3 +1,6 @@
+.openMenu, .closeMenu {
+    display: none;
+}
 
 .btnNightMode {
 	height: 2.4rem;
@@ -78,3 +81,34 @@
 .btnDayMode:active:before {
 	background: rgba(0, 30, 29, 0.6);
 }
+
+
+@media all and (max-width: 1120px) {
+   	.openMenu, .closeMenu {
+        display:flex;
+        color: var(--yellow);
+        position: fixed;
+        top: 1rem;
+        left: 0.5rem;
+        z-index: 10;
+        height: 2.5rem;
+        width: 2.5rem;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+
+	.closeMenu {
+		height: 2rem;
+        width: 2rem;
+		padding: 0.25rem;
+	}
+
+	.navList {
+		display: flex;
+		flex-direction: column;
+	}
+	#hide {
+		display: none;
+	}
+
+   }

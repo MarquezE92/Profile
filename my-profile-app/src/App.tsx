@@ -12,6 +12,7 @@ import TechnologiesCards from "./Components/TechnologiesCards/TechnologiesCards"
 import { projects } from "./Utils";
 import "./App.css";
 
+
 const App = () => {
 
   const [en, setEn] = useState(true);

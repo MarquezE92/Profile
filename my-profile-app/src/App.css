@@ -37,6 +37,7 @@
 	position: fixed;
 	top: 0.5rem;
 	right: 0.5rem;
+	
 }
 
 .sectionTitle {
@@ -99,7 +100,7 @@ width: 767px;
 	color: var(--yellow);
 	transition: 0.5s;
 	cursor: pointer;
-	z-index: 2;
+	z-index: 10;
 }
 
 #sun:hover {
@@ -127,7 +128,7 @@ width: 767px;
 	transition: 0.5s;
 	background-color: var(--lightGreen);
 	color: var(--darkGreen);
-	z-index: 2;
+	z-index: 10;
 }
 
 #moon:hover {
@@ -173,4 +174,24 @@ flex-direction: column;
 gap: 1rem;
 align-items: center;
 }
+
+/*---------------------------------------------- RESPONSIVE        */
+@media all and (max-width: 1120px) {
+    .languageBtn, #moon, #sun {
+        display: none;
+    }
+
+	#navBtnsContainer {
+		width: fit-content;
+		padding: 0.5rem;
+		border-radius: 0 1rem 1rem 0;
+		top:0.3rem;
+		left: 3rem;	
+		display: flex;
+		justify-content: center;
+		position: fixed;
+		z-index: 9;	
+	}
+	
+   }
 
