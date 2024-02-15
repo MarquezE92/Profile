@@ -59,3 +59,13 @@ width: 40rem;
 opacity: 1;
 filter:contrast(110%)
 }
+
+@media all and (max-width: 984px) {
+    .certificatesSection {
+        width: 32rem;
+    }
+
+    .certificatesFirstImg:hover, .certificatesImg:hover, .certificatesLastImg:hover {
+        width: 28rem;
+    }
+  }

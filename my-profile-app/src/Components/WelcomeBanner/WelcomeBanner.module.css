@@ -65,3 +65,13 @@
 	opacity: 0;
 	transition: all 1.5s cubic-bezier(0.48, 0, 0.12, 1);
 }
+
+@media all and (max-width: 984px) {
+	.WelcomeContent {
+		flex-direction: column;
+		width: 550px;
+	}
+	.WelcomeTxtContainer {
+		width: 32rem;
+	}
+}

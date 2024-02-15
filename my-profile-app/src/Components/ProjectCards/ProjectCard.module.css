@@ -54,3 +54,20 @@
     padding-right: 8px;
 }
 
+@media all and (max-width: 984px) {
+	.container {
+		flex-direction: column;
+		width: 32rem;
+        height: fit-content;
+	}
+
+    .imgContainer, .txtContainer {
+        width: 100%;
+    }
+
+    .imgContainer {
+        border: none;
+    }
+    
+
+}

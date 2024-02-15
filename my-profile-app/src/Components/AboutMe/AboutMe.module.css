@@ -10,4 +10,9 @@
     font-weight: 700;
   }
   
+  @media all and (max-width: 984px) {
+    #text {
+        width: 32rem;
+    }
+  }
  

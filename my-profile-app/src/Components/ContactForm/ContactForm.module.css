@@ -61,3 +61,8 @@
 	box-shadow: 0.2rem 0rem 0.5rem var(--darkGreen);
 }
 
+@media all and (max-width: 984px) {
+	.contactContainer {
+		width: 32rem;
+	}
+}

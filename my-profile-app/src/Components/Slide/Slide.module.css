@@ -43,3 +43,13 @@ cursor: pointer;
 
     color: transparent;
 }
+
+@media all and (max-width: 984px) {
+  .leftArrow {
+    left: -0.9rem;
+  }
+
+  .rightArrow {
+    left: 28.85rem;
+  }
+}

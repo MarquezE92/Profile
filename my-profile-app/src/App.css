@@ -177,10 +177,7 @@ align-items: center;
 
 /*---------------------------------------------- RESPONSIVE        */
 @media all and (max-width: 1120px) {
-    .languageBtn, #moon, #sun {
-        display: none;
-    }
-
+   
 	#navBtnsContainer {
 		width: fit-content;
 		padding: 0.5rem;
@@ -194,4 +191,10 @@ align-items: center;
 	}
 	
    }
+
+   @media all and (max-width: 984px) {
+    .sectionTitle, .sectionTitleNight {
+        width: 550px;
+    }
+  }
 
