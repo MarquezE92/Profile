@@ -67,7 +67,12 @@
 
     .imgContainer {
         border: none;
-    }
-    
+    }  
 
+}
+
+@media all and (max-width: 728px) {
+	.container {
+		width: 21rem;
+	}
 }

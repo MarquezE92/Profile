@@ -53,3 +53,9 @@ cursor: pointer;
     left: 28.85rem;
   }
 }
+
+@media all and (max-width: 728px) {
+  .rightArrow {
+    left: 18rem;
+  }
+}

@@ -26,8 +26,8 @@ const NavBtns: FC<NavBtnsProps> = ({ nightMode, en }) => {
     <div className={styles.navList}>
       {
         openedList ?
-        <BsXLg className={styles.closeMenu} onClick={()=>setOpenedList(false)}/> :
-        <BsList className={styles.openMenu} onClick={()=>setOpenedList(true)}/>
+        <BsXLg className={nightMode ? styles.closeMenu : styles.closeMenuDay} onClick={()=>setOpenedList(false)}/> :
+        <BsList className={nightMode ? styles.openMenu : styles.openMenuDay} onClick={()=>setOpenedList(true)}/>
         
       }
       

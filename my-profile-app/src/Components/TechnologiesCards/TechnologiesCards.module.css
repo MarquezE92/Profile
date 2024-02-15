@@ -62,3 +62,9 @@
 		width: 32rem;
 	}
 }
+
+@media all and (max-width: 728px) {
+	.contenedorCards {
+		width: 21rem;
+	}
+}

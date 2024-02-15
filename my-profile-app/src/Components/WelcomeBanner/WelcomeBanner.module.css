@@ -75,3 +75,23 @@
 		width: 32rem;
 	}
 }
+
+@media all and (max-width: 728px) {
+	.WelcomeTxtContainer {
+		width: 21rem;
+	}
+
+	.WelcomeContent {
+		width: 330px;
+	}
+
+	.logoContainer {
+		height: 18rem;
+		width: 18rem;
+	}
+
+	.logo, .me {
+		height: 18rem;
+	}
+}
+
