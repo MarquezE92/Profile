@@ -23,7 +23,8 @@ export const ContactForm: FC<ContactFormProps> = ({ en }) => {
     whileInView: { opacity: 1, y:0, transition:{duration:1} }
   };
 
-  const [input, setInput] = useState<FormInput>({ "name": "", "email": "", "message": "" });
+  const initialInputState: FormInput = { name: '', email: '', message: '' };
+  const [input, setInput] = useState<FormInput>(initialInputState);
 
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -32,10 +33,12 @@ export const ContactForm: FC<ContactFormProps> = ({ en }) => {
       emailjs.sendForm("service_hrhdxpp", "template_zv9ohli", form.current, "svsTiLFDtifbgz3cZ")
         .then((result) => {
           console.log(result.text);
-          e.currentTarget.reset();
+          setInput(initialInputState);
         })
         .catch((error) => {
-          console.log(error.text);
+          if (error && error.text) {
+            console.log(error.text);
+          }
         });
     }
   };
@@ -64,7 +67,11 @@ export const ContactForm: FC<ContactFormProps> = ({ en }) => {
           onChange={(e) => setInput({ ...input, email: e.target.value })}
         />
         <label>{en ? "Message" : "Mensaje"}</label>
-        <textarea name="message" className={styles.contactContainerTextarea} />
+        <textarea
+         name="message" 
+         value={input.message} 
+         onChange={(e) => setInput({ ...input, message: e.target.value })}
+         className={styles.contactContainerTextarea} />
         <input type="submit" value="Send" className={styles.contactContainerSubmit} />
       </form>
     </motion.div>
