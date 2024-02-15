@@ -1,7 +1,7 @@
 import React, {FC} from 'react';
 import { motion } from 'framer-motion';
 import styles from './AboutMe.module.css';
-import Lila from '../../images/Lila.jpeg';
+import Lila from '../../../public/assets/images/Lila.jpeg';
 
 
 interface AboutMeProps {

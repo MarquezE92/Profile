@@ -1,10 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import styles from './Certificates.module.css';
-import fullstack from '../../images/Certificado-Henry.png';
-import ingles from '../../images/Ingles.png';
-import japones from '../../images/Japones.png';
-import scrum from '../../images/Scrum.png'
+import fullstack from '../../../public/assets/images/Certificado-Henry.png';
+import ingles from '../../../public/assets/images/Ingles.png';
+import japones from '../../../public/assets/images/Japones.png';
+import scrum from '../../../public/assets/images/Scrum.png'
 
 const Certificates = () => {
 

@@ -1,7 +1,7 @@
 import {FC} from 'react';
 import styles from './WelcomeBanner.module.css';
-import logo from "../../images/e.png";
-import me from "../../images/Me.png";
+import logo from "../../../public/assets/images/e.png";
+import me from "../../../public/assets/images/Me.png";
 
 interface WelcomeBannerProps {
     nightMode: boolean;
