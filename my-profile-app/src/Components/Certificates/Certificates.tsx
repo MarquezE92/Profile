@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import styles from './Certificates.module.css';
 import fullstack from '../../../public/assets/images/Certificado-Henry.png';
 import ingles from '../../../public/assets/images/Ingles.png';
-import japones from '../../../public/assets/images/Japones.png';
+import japones from '../../../public/assets/images/japones.png';
 import scrum from '../../../public/assets/images/Scrum.png'
 
 const Certificates = () => {
