@@ -84,7 +84,11 @@ const App = () => {
         </div>
       </div>
 
-
+      <footer className={nightMode ? "footerNight" : "footerDay"}>
+        <a href="https://github.com/MarquezE92/Profile/tree/main/my-profile-app" target="_blank" id="linkFooter">
+          {en ? "Made with 💛 by Estefanía" : "Hecho con 💛 por Estefanía"}
+        </a>
+      </footer>
 
     </div>
   )
