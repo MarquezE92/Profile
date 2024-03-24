@@ -56,6 +56,10 @@ export const technologies = [
     img: "../assets/images/mongodb_icon.svg"
 },
 {
+    name: "Sass",
+    img: "../assets/images/sass.svg"
+},
+{
     name: "Bootstrap",
     img: "../assets/images/bootstrap_icon.svg"
 },
@@ -83,5 +87,9 @@ export const technologies = [
 {
     name: "Postman",
     img: "../assets/images/postman.png"
+},
+{
+    name: "Figma",
+    img: "../assets/images/figma.svg"
 }
 ]
