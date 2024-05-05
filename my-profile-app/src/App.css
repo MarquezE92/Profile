@@ -198,7 +198,9 @@ align-items: center;
 	text-decoration: none;
 	color: inherit;
 }
-
+.titleContactDiv {
+	display: none;
+}
 /*---------------------------------------------- RESPONSIVE        */
 @media all and (max-width: 1120px) {
    
@@ -238,3 +240,33 @@ align-items: center;
     }
   }
 
+  @media all and (max-width: 460px) {  
+	.titleContactDiv {
+	display: flex;
+	gap: 0.5rem;
+	width: 330px;
+}
+.bannerNightMode {
+	height: 1.7rem;
+	width: 1.7rem;
+	transition: 0.5s;
+	cursor: pointer;
+	color: var(--lightGreen);
+}
+
+.bannerNightMode:hover {
+	color: var(--yellow);
+}
+.bannerDayMode{
+	height: 1.7rem;
+	width: 1.7rem;
+	transition: 0.5s;
+	cursor: pointer;
+	color: var(--darkGreen);
+}
+
+.bannerDayMode:hover {
+	color: var(--yellow);
+}
+}
+  

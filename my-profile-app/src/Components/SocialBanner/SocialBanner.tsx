@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import styles from './SocialBanner.module.css';
 import { BsLinkedin, BsGithub, BsWhatsapp } from "react-icons/bs";
 

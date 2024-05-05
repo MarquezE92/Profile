@@ -9,6 +9,7 @@ import AboutMe from "./Components/AboutMe/AboutMe";
 import ProjectCard from "./Components/ProjectCards/ProjectCard";
 import Certificates from "./Components/Certificates/Certificates";
 import TechnologiesCards from "./Components/TechnologiesCards/TechnologiesCards";
+import { BsLinkedin, BsGithub, BsWhatsapp } from "react-icons/bs";
 import { projects } from "./Utils";
 import "./App.css";
 
@@ -79,7 +80,14 @@ const App = () => {
         </div>
 
         <div className="sectionsDiv" id="Contact me">
-          <h2 className={nightMode ? "sectionTitleNight" : "sectionTitle"}>{en ? "Contact me" : "Contactame"}</h2>
+          
+            <h2 className={nightMode ? "sectionTitleNight" : "sectionTitle"}>{en ? "Contact me" : "Contactame"}</h2>
+            <div className="titleContactDiv">
+              <a href="https://www.linkedin.com/in/estefan%C3%ADa-m%C3%A1rquez-137b45175/"  target="_BLANK"><BsLinkedin className={nightMode ? "bannerNightMode" : "bannerDayMode"} /></a>
+              <a href="https://github.com/MarquezE92" target="_BLANK"><BsGithub className={nightMode ? "bannerNightMode" : "bannerDayMode"} /></a>
+              <a href="https://wa.me/542236914591" target="_BLANK"><BsWhatsapp className={nightMode ? "bannerNightMode" : "bannerDayMode"} /></a>
+            </div>
+          
           <ContactForm en={en} />
         </div>
       </div>

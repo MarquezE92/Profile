@@ -48,3 +48,8 @@
 .bannerDayMode .bannerIcon:hover {
 	color: var(--yellow);
 }
+@media all and (max-width: 460px) {
+	.bannerDayMode, .bannerNightMode {
+		display: none;
+	}
+}
