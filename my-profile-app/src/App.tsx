@@ -74,10 +74,10 @@ const App = () => {
           }
         </div>
 
-        <div className="sectionsDiv" id="Certificates">
+        {/* <div className="sectionsDiv" id="Certificates">
           <h2 className={nightMode ? "sectionTitleNight" : "sectionTitle"}>{en ? "Certificates" : "Certificados"}</h2>
           <Certificates/>
-        </div>
+        </div> */}
 
         <div className="sectionsDiv" id="Contact me">
           

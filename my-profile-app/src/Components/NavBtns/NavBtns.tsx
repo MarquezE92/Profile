@@ -33,8 +33,8 @@ const NavBtns: FC<NavBtnsProps> = ({ nightMode, en }) => {
       
       <button onClick={()=>handleScrollToClick("About me")} id={openedList? styles.show : styles.hide} className={nightMode ? styles.btnNightMode : styles.btnDayMode}>{en ? "About me" : "Sobre mí"}</button>
       <button onClick={()=>handleScrollToClick("Technologies")} id={openedList? styles.show : styles.hide} className={nightMode ? styles.btnNightMode : styles.btnDayMode}>{en ? "Technologies" : "Tecnologías"}</button>
-      <button onClick={()=>handleScrollToClick("Projects")} id={openedList? styles.show : styles.hide} className={nightMode ? styles.btnNightMode : styles.btnDayMode}>{en ? "Projects" : "Proyetos"}</button>
-      <button onClick={()=>handleScrollToClick("Certificates")} id={openedList? styles.show : styles.hide} className={nightMode ? styles.btnNightMode : styles.btnDayMode}>{en ? "Certificates" : "Certificados"}</button>
+      <button onClick={()=>handleScrollToClick("Projects")} id={openedList? styles.show : styles.hide} className={nightMode ? styles.btnNightMode : styles.btnDayMode}>{en ? "Projects" : "Proyectos"}</button>
+{/*       <button onClick={()=>handleScrollToClick("Certificates")} id={openedList? styles.show : styles.hide} className={nightMode ? styles.btnNightMode : styles.btnDayMode}>{en ? "Certificates" : "Certificados"}</button> */}
       <button onClick={()=>handleScrollToClick("Contact me")} id={openedList? styles.show : styles.hide} className={nightMode ? styles.btnNightMode : styles.btnDayMode}>{en ? "Contact me" : "Contactame"}</button>
     </div>
   );
